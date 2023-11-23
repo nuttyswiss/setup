@@ -4,10 +4,8 @@
 # least a minimal server based install. Here we install and update all the
 # APT repos that we will need.
 
-if [[ "$(whoami)" != "root" ]]; then
-        echo "ERROR: not root" >&2
-        exit 1
-fi
+# Ensure we are root.
+[[ "$(whoami)" != "root" ]] && echo "ERROR: not root" >&2 && exit 1
 
 # Tailscale
 curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.noarmor.gpg | tee /usr/share/keyrings/tailscale-archive-keyring.gpg > /dev/null
