@@ -13,4 +13,4 @@ curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.tailscale-keyring.list
 
 # After installing all repositories, update and upgrade.
 sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get -y upgrade
