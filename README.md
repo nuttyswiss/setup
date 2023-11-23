@@ -26,3 +26,9 @@ not a concern.
 Even in the semi-minimal server install, the system distributers believe in
 having various crud being installed. Nuke what we can, when it anoys us enough
 to bother writing up the necessary code.
+
+### `setup-home.sh` -- Set up a minimal home directory configs.
+
+Work in progress. Home directory configuration with a minimal set of annoying
+customizations. Set up quiet login. Aliases only on interactive shells, with
+environment variables for all shells. Create the base directory structure.

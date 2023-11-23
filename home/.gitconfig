@@ -1,0 +1,6 @@
+[user]
+	name = Tobias Weingartner
+	email = weingart@tepid.org
+[push]
+	default = simple
+
