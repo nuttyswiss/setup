@@ -39,3 +39,7 @@ to bother writing up the necessary code.
 Work in progress. Home directory configuration with a minimal set of annoying
 customizations. Set up quiet login. Aliases only on interactive shells, with
 environment variables for all shells. Create the base directory structure.
+
+### `setup-ssh.sh` -- Set up an initial set of SSH configs.
+
+Toss in an initial set of authorized SSH keys for remote login.
