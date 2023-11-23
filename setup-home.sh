@@ -11,7 +11,7 @@
 mkdir -p ${HOME:?}/{bin,pkg,sdk,src,tmp,work}
 
 # Copy over the template home directory
-install -v ./home ${HOME:?}
+tar -C home -cf - . | tar -C ${HOME:?} -xpvf -
 
 # Set some resonable perms on stuff
 chmod 755 ${HOME:?} ${HOME:?}/{bin,pkg,sdk,src,tmp,work}
