@@ -20,3 +20,9 @@ makes reading the output of boot-up and any terminal interactions much easier
 on current, higher resolution displays. No attempt is made to detect the type
 of display present and adjust font resolutions. Skip if console font size is
 not a concern.
+
+### `nuke-crud.sh` -- Nuke random system crud.
+
+Even in the semi-minimal server install, the system distributers believe in
+having various crud being installed. Nuke what we can, when it anoys us enough
+to bother writing up the necessary code.

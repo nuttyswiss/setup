@@ -8,3 +8,9 @@
 
 # Nuke the MOTD automation
 rm -f /etc/update-motd.d/[0-9][0-9]-*
+
+# Nuke the stupid sudo admin flag
+cat <<EOF > /etc/sudoers.d/disable_admin_file_in_home
+# Disable ~/.sudo_as_admin_successful file
+Defaults !admin_flag
+EOF
