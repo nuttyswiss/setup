@@ -5,6 +5,9 @@
 # Ensure we are NOT root.
 [[ "$(whoami)" = "root" ]] && echo "ERROR: we are root" >&2 && exit 1
 
+# Ensure directory exists
+mkdir -p ${HOME:?}/.ssh
+
 # Add some public SSH keys
 cat <<EOF > ${HOME:?}/.ssh/authorized_keys
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGW+1Y+31KA8S29h15BBAgNrNFaIHGaAIYo/PlhsH240
