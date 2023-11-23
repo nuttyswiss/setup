@@ -21,6 +21,13 @@ on current, higher resolution displays. No attempt is made to detect the type
 of display present and adjust font resolutions. Skip if console font size is
 not a concern.
 
+### `init-packages.sh` -- Add some missing and necessary packages.
+
+It seems that the latest Linux servers are missing some very basic Unix
+utilties that have been part of Unix for roughly ever. Ensure they're there
+and add some other things that should have been added to the base install
+as soon as the world became aware of them.
+
 ### `nuke-crud.sh` -- Nuke random system crud.
 
 Even in the semi-minimal server install, the system distributers believe in
