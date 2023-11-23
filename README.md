@@ -1,7 +1,7 @@
 # setup
 
 This repo contains setup scripts and binaries for hosts and homes. These are
-meant to take a fairly plain Ubuntu LTS server intall to something that is
+meant to take a fairly plain Ubuntu LTS server install to something that is
 familiar and useful to the author.
 
 ## Host scripts
