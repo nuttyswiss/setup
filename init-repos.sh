@@ -4,8 +4,8 @@
 # least a minimal server based install. Here we install and update all the
 # APT repos that we will need.
 
-if [[ "$(whoami)" != "root" ]]; then 
-        echo "ERROR: not root" 2>& 
+if [[ "$(whoami)" != "root" ]]; then
+        echo "ERROR: not root" >&2
         exit 1
 fi
 
