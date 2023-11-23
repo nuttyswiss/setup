@@ -24,5 +24,10 @@ FONTSIZE="16x32"
 VIDEOMODE=
 EOF
 
+# WTaF, the default locale should not cause us pain...
+cat <<EOF > /etc/default/locale
+LANG=C.UTF-8
+EOF
+
 # Update boot image
 update-initramfs -u
